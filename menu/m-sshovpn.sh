@@ -830,7 +830,7 @@ echo -e "$COLOR1└────────────────────�
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 echo -e ""
 rm -rf /tmp/ssh2
-systemctl restart ws-stunnel > /dev/null 2>&1
+#systemctl restart ws-stunnel > /dev/null 2>&1
 sleep 3
 if [ -e "/var/log/auth.log" ]; then
 LOG="/var/log/auth.log";
