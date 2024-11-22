@@ -47,7 +47,7 @@ fi
 function key(){
 rm -rf /root/rmbl
 echo -e  "${COLOR1}┌──────────────────────────────────────────┐${NC}"
-echo -e  "${COLOR1}│              PASWORD SCRIPT  kholilah vpn      │${NC}"
+echo -e  "${COLOR1}│              PASSWORD SCRIPT           │${NC}"
 echo -e  "${COLOR1}└──────────────────────────────────────────┘${NC}"
 echo " "
 read -rp "Masukan Key Kamu Disini ctrl + c Exit : " -e kode
@@ -296,8 +296,8 @@ if [[ -e /etc/github/api ]]; then
 m-ip
 else
 mkdir /etc/github
-echo "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" > /etc/github/api
-echo "mbl@gmail.com" > /etc/github/email
+echo "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" > /etc/github/api
+echo "anggadian2103@gmail.com" > /etc/github/email
 echo "angga2103/dhani" > /etc/github/username
 m-ip
 fi
@@ -376,7 +376,7 @@ clear
 clear && clear && clear
 clear;clear;clear
 echo -e " $COLOR1╔══════════════════════════════════════════════════════════╗${NC}"
-echo -e " $COLOR1║${NC}${COLBG1}               ${WH} • KHOLILAH VPN TUNNELING •                ${NC}$COLOR1║ $NC"
+echo -e " $COLOR1║${NC}${COLBG1}               ${WH} • VPN TUNNELING •                ${NC}$COLOR1║ $NC"
 echo -e " $COLOR1╚══════════════════════════════════════════════════════════╝${NC}"
 echo -e " $COLOR1╔══════════════════════════════════════════════════════════╗${NC}"
 echo -e " $COLOR1║$NC${WH}• OS            ${COLOR1}: ${WH}$MODEL2${NC}"
@@ -454,19 +454,19 @@ d2=$(date -d "$today" +%s)
 certificate=$(( (d1 - d2) / 86400 ))
 domain=$(cat /etc/xray/domain)
 function bannner(){
-wget -O /etc/issue.net "https://raw.githubusercontent.com/angga2103/angga2103/dhani/install/main/issue.net" &> /dev/null
-echo "6531534912:AAEMmubeZLlXxRPt7tr5drirt2EHNCN3TF0" > /usr/bin/token
-echo "6447416716" > /usr/bin/idchat
-echo "6531534912:AAEMmubeZLlXxRPt7tr5drirt2EHNCN3TF0" > /etc/perlogin/token
+wget -O /etc/issue.net "https://raw.githubusercontent.com/angga2103/dhani/install/main/issue.net" &> /dev/null
+echo "7300144648:AAGXRdz4SBmojlOkPBet-Sy2esU1xeyKv5o" > /usr/bin/token
+echo "7236113204" > /usr/bin/idchat
+echo "7300144648:AAGXRdz4SBmojlOkPBet-Sy2esU1xeyKv5o" > /etc/perlogin/token
 echo "-1002097641597" > /etc/perlogin/id
-echo "6531534912:AAEMmubeZLlXxRPt7tr5drirt2EHNCN3TF0" > /etc/per/token
-echo "6447416716" > /etc/per/id
+echo "7300144648:AAGXRdz4SBmojlOkPBet-Sy2esU1xeyKv5o" > /etc/per/token
+echo "7236113204" > /etc/per/id
 rm -rf /usr/bin/ddsdswl.session
 rm -rf /usr/bin/kyt/var.txt
 rm -rf /usr/bin/kyt/database.db
 cat >/usr/bin/kyt/var.txt <<EOF
-BOT_TOKEN="6531534912:AAEMmubeZLlXxRPt7tr5drirt2EHNCN3TF0"
-ADMIN="6447416716"
+BOT_TOKEN="7300144648:AAGXRdz4SBmojlOkPBet-Sy2esU1xeyKv5o"
+ADMIN="7236113204"
 DOMAIN="$domain"
 EOF
 systemctl restart nginx
@@ -479,7 +479,7 @@ menu
 function updatews(){
 cd
 rm -rf *
-wget https://raw.githubusercontent.com/angga2103/angga2103/dhani/main/menu/install-up.sh &> /dev/null
+wget https://raw.githubusercontent.com/angga2103/dhani/main/menu/install-up.sh &> /dev/null
 chmod +x install_up.sh
 ./install_up.sh
 }
