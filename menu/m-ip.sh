@@ -7,7 +7,7 @@ WH='\033[1;37m'
 ipsaya=$(curl -sS ipinfo.io/ip)
 data_server=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
 date_list=$(date +"%Y-%m-%d" -d "$data_server")
-data_ip="https://raw.githubusercontent.com/RozTun/permission/main/ipmini"
+data_ip="https://raw.githubusercontent.com/angga2103/permission/main/ipmini"
 checking_sc() {
     useexp=$(curl -sS $data_ip | grep $ipsaya | awk '{print $3}')
     if [[ $date_list < $useexp ]]; then
@@ -30,8 +30,8 @@ checking_sc
 cd
 rm -rf /root/rmbl >/dev/null 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 
 APIGIT=$(cat /etc/github/api)
@@ -41,7 +41,7 @@ author=$(cat /etc/profil)
 
 function tambahip2(){
 author=$(cat /etc/profil)
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 if [ "$superadmin" = "VIP" ]; then
 tambahip
 else
@@ -61,7 +61,7 @@ fi
 }
 function gantiip2(){
 author=$(cat /etc/profil)
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 if [ "$superadmin" = "VIP" ]; then
 mkdir /root/rmbl
 cd /root/rmbl/ &> /dev/null
@@ -106,13 +106,13 @@ fi
 }
 function add_ip(){
 clear
-nama2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+nama2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 author=$(cat /etc/profil)
 TIMES="10"
 CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 
 echo -e "$RED┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$RED ${NC} ${RED}               ${WH}• REGISTER IPVPS •              ${NC} $RED $NC"
@@ -204,11 +204,11 @@ case "$list" in
 done
 fi
 MYIP=$(curl -sS ipv4.icanhazip.com)
-U2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-U3=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $3}')
-U4=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $4}')
-U5=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $5}')
-U6=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $6}')
+U2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+U3=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+U4=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $4}')
+U5=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+U6=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $6}')
 
 #echo "### $client $exp $daftar" >> /etc/register/ipmini
 exp=$(date -d "$hari days" +"%Y-%m-%d")
@@ -265,7 +265,7 @@ TEXT="
 <b>Succes Create this IP</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 2Menit Dulu Lalu Masuk Lagi</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me/rmblvpn1"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me/rmblvpn1"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me/masansor2"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me/masansor2"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 cd
 rm -rf /root/rmbl >/dev/null 
@@ -282,10 +282,10 @@ author=$(cat /etc/profil)
 IPVPS=$(curl -s ipinfo.io/ip )
 ISP=$(cat /etc/xray/isp)
 CITY=$(cat /etc/xray/city)
-nama2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-Exp2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $3}')
-job2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
-ipmini=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $6}')
+nama2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+Exp2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+job2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+ipmini=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $6}')
 sisaip=$(cat /etc/regip/ipmini | wc -l) 
 totalip=$(expr "$ipmini" - "$sisaip")
 if [ "$job2" = "VIP" ]; then
@@ -314,13 +314,13 @@ m-ip
 }
 function genkey(){
 clear
-nama2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+nama2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 author=$(cat /etc/profil)
 TIMES="10"
 CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 
 echo -e "$RED┌────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}               ${WH}тАв GENERATE KEY IPVPS тАв           ${NC} $COLOR1 $NC"
@@ -369,11 +369,11 @@ fi
 key=$(openssl rand -hex 5)
 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-U2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-U3=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $3}')
-U4=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $4}')
-U5=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $5}')
-U6=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $6}')
+U2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+U3=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+U4=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $4}')
+U5=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+U6=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $6}')
 
 exp=$(date -d "$hari days" +"%Y-%m-%d")
 hariini=$(date -d "0 days" +"%Y-%m-%d")
@@ -447,7 +447,7 @@ TEXT="
 <b>Succes Create This Key</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 2Menit Dulu Lalu Masuk Lagi</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me/rmblvpn1"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me/rmblvpn1"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me/masansor2"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me/masansor2"}]]}'
 else
 TEXT="
 <code>◇━━━━━━━━━━━━━━◇</code>
@@ -460,7 +460,7 @@ TEXT="
 <b>Succes Create This Key</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 2Menit Dulu Lalu Masuk Lagi</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me/rmblvpn1"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me/rmblvpn1"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me/masansor2"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me/masansor2"}]]}'
 fi
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 cd
@@ -477,8 +477,8 @@ m-ip
 function delipvps(){
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 
 author=$(cat /etc/profil)
@@ -607,8 +607,8 @@ m-ip
 function tambahip(){
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 
 author=$(cat /etc/profil)
@@ -732,8 +732,8 @@ m-ip
 function gantinama(){
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 
 author=$(cat /etc/profil)
@@ -867,8 +867,8 @@ m-ip
 function gantiip(){
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 
 author=$(cat /etc/profil)
@@ -949,11 +949,11 @@ name1=$(grep -E "^### " "client" | cut -d ' ' -f 2 | sed -n "$CLIENT_NUMBER"p) #
 exp=$(grep -E "^### " "client" | cut -d ' ' -f 3 | sed -n "$CLIENT_NUMBER"p) #exp
 ivps1=$(grep -E "^### " "client" | cut -d ' ' -f 4 | sed -n "$CLIENT_NUMBER"p) #ip
 fi
-U2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-U3=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $3}')
-U4=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $4}')
-U5=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $5}')
-U6=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $6}')
+U2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+U3=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+U4=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $4}')
+U5=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+U6=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $6}')
 ws=1
 
 regip2=$(expr "$U6" - "$ws")
@@ -1010,8 +1010,8 @@ m-ip
 function renewipvps(){
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 
 author=$(cat /etc/profil)
@@ -1078,13 +1078,13 @@ exp=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/permission/main/ipmi
 ivps1=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/permission/main/ipmini | grep $iprenew | awk '{print $4}') #ip
 trial=$(curl -sS https://raw.githubusercontent.com/${USERGIT}/permission/main/ipmini | grep $iprenew | awk '{print $5}') #ip 
 MYIP=$(curl -sS ipv4.icanhazip.com)
-UU2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+UU2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 
-U2=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-U3=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $3}')
-U4=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $4}')
-U5=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $5}')
-U6=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $6}')
+U2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+U3=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $3}')
+U4=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $4}')
+U5=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+U6=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $6}')
 
 
 now=$(date +%Y-%m-%d)
@@ -1146,8 +1146,8 @@ m-ip
 function useripvps(){
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 author=$(cat /etc/profil)
 cd
@@ -1181,8 +1181,8 @@ echo -e ""
 read -n 1 -s -r -p "   Press any key to back on menu"
 m-ip
 }
-Isadmin=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $5}')
-ipmini=$(curl -sS https://raw.githubusercontent.com/RozTun/permission/main/ipmini | grep $MYIP | awk '{print $6}')
+Isadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $5}')
+ipmini=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $6}')
 sisaip=$(cat /etc/regip/ipmini | wc -l) 
 ss=0
 if [ "$Isadmin" = "OFF" ]; then
@@ -1193,7 +1193,7 @@ echo -e "$RED└─────────────────────�
 echo -e "$RED┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$RED ${NC} [INFO] Only PRO Users Can Use This Panel"
 echo -e "$RED ${NC} [INFO] Buy Premium Membership : "
-echo -e "$RED ${NC} [INFO] PM : https://t.me/rmblvpn1"
+echo -e "$RED ${NC} [INFO] PM : https://t.me/masansor2"
 echo -e "$RED└─────────────────────────────────────────────────┘${NC}"
 echo -e "$RED┌────────────────────── ${WH}BY${NC} ${RED}───────────────────────┐${NC}"
 echo -e "$RED ${NC}                ${WH}• $author •${NC}                 $RED $NC"
@@ -1211,7 +1211,7 @@ echo -e "$RED└─────────────────────�
 echo -e "$RED┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$RED ${NC} [INFO] Only PRO Users Can Use This Panel"
 echo -e "$RED ${NC} [INFO] Buy Premium Membership : "
-echo -e "$RED ${NC} [INFO] PM : https://t.me/rmblvpn1"
+echo -e "$RED ${NC} [INFO] PM : https://t.me/masansor2"
 echo -e "$RED└─────────────────────────────────────────────────┘${NC}"
 echo -e "$RED┌────────────────────── ${WH}BY${NC} ${RED}───────────────────────┐${NC}"
 echo -e "$RED ${NC}                ${WH}• $author •${NC}                 $RED $NC"
@@ -1228,7 +1228,7 @@ echo -e "$RED└─────────────────────�
 echo -e "$RED┌─────────────────────────────────────────────────┐${NC}"
 echo -e "$RED ${NC} [INFO] SISA IP/KEY REGIST KAMU SUDAH HABIS"
 echo -e "$RED ${NC} [INFO] Buy IP/KEY Premium SUPER ADMIN : "
-echo -e "$RED ${NC} [INFO] PM : https://t.me/rmblvpn1"
+echo -e "$RED ${NC} [INFO] PM : https://t.me/masansor2"
 echo -e "$RED└─────────────────────────────────────────────────┘${NC}"
 echo -e "$RED┌────────────────────── ${WH}BY${NC} ${RED}───────────────────────┐${NC}"
 echo -e "$RED ${NC}                ${WH}• $author •${NC}                 $RED $NC"
