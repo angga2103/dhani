@@ -504,7 +504,7 @@ case $opt in
 10 | 10) clear ; m-system ;;
 11 | 11) clear ; m-backup;;
 12 | 12) clear ; reboot ;;
-13 | 13) clear ; $ressee ;;
+13 | 13) clear ; m-ip ;;
 14 | 14) clear ; key ;;
 89 | 89) clear ; bannner ;;
 88 | 88) clear ; new ;;
