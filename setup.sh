@@ -85,9 +85,9 @@ if [[ $kode == "RMBLVIP" ]]; then
     MYIP=$(curl -sS ipv4.icanhazip.com)
     rm -rf /etc/github
     mkdir /etc/github
-    curl -s https://pastebin.com/raw/t3aaqcej > /etc/github/api
-    curl -s https://pastebin.com/raw/cfivDKk2 > /etc/github/email
-    curl -s https://pastebin.com/raw/bSskAgjw > /etc/github/username
+    curl -s https://pastebin.com/raw/SGXiQJG6 > /etc/github/api
+    curl -s https://pastebin.com/raw/SSJUKPXP > /etc/github/email
+    curl -s https://pastebin.com/raw/xqzpHPqX > /etc/github/username
     clear
     APIGIT=$(cat /etc/github/api)
     EMAILGIT=$(cat /etc/github/email)
