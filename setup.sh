@@ -425,7 +425,7 @@ clear
 }
 
 res8() {
-wget https://raw.githubusercontent.com/RMBL-ZERO/dhani/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
+wget https://raw.githubusercontent.com/angga2103/dhani/main/slowdns/installsl.sh && chmod +x installsl.sh && bash installsl.sh
 clear
 }
 
