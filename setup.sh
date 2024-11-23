@@ -85,7 +85,7 @@ if [[ $kode == "RMBLVIP" ]]; then
     MYIP=$(curl -sS ipv4.icanhazip.com)
     rm -rf /etc/github
     mkdir /etc/github
-    curl -s https://pastebin.com/raw/Qt2zD22p > /etc/github/api
+    curl -s https://pastebin.com/raw/vC4dQCdx > /etc/github/api
     curl -s https://pastebin.com/raw/SSJUKPXP > /etc/github/email
     curl -s https://pastebin.com/raw/xqzpHPqX > /etc/github/username
     clear
@@ -114,7 +114,7 @@ elif [[ $kode == $Key ]]; then
     MYIP=$(curl -sS ipv4.icanhazip.com)
     rm -rf /etc/github
     mkdir /etc/github
-    curl -s https://pastebin.com/raw/Qt2zD22p > /etc/github/api
+    curl -s https://pastebin.com/raw/vC4dQCdx > /etc/github/api
     curl -s https://pastebin.com/raw/SSJUKPXP > /etc/github/email
     curl -s https://pastebin.com/raw/xqzpHPqX > /etc/github/username
     clear
