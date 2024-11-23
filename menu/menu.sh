@@ -57,11 +57,11 @@ echo -e "KODE SALAH SILAHKAN MASUKKAN ULANG KODENYA"
 key
 fi
 clear
-LIST=$(curl -sS https://raw.githubusercontent.com/angga2103/dhani/license/main/key | grep $kode | awk '{print $2}')
-Key=$(curl -sS https://raw.githubusercontent.com/angga2103/dhani/license/main/key | grep $kode | awk '{print $3}')
-KEY2=$(curl -sS https://raw.githubusercontent.com/angga2103/dhani/license/main/key | grep $kode | awk '{print $4}')
-ADMIN=$(curl -sS https://raw.githubusercontent.com/angga2103/dhani/license/main/key | grep $kode | awk '{print $5}')
-TOTALIP=$(curl -sS https://raw.githubusercontent.com/angga2103/dhani/license/main/key | grep $kode | awk '{print $6}')
+LIST=$(curl -sS https://raw.githubusercontent.com/angga2103/license/main/key | grep $kode | awk '{print $2}')
+Key=$(curl -sS https://raw.githubusercontent.com/angga2103/license/main/key | grep $kode | awk '{print $3}')
+KEY2=$(curl -sS https://raw.githubusercontent.com/angga2103/license/main/key | grep $kode | awk '{print $4}')
+ADMIN=$(curl -sS https://raw.githubusercontent.com/angga2103/license/main/key | grep $kode | awk '{print $5}')
+TOTALIP=$(curl -sS https://raw.githubusercontent.com/angga2103/license/main/key | grep $kode | awk '{print $6}')
 U2=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
 U3=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $3}')
 U4=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $4}')
