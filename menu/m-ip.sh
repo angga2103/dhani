@@ -35,12 +35,12 @@ listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/
 superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 author=$(cat /etc/profil)
-userscript=$(curl -sS https://pastebin.com/raw/rX2sqmEa | awk '{print $1}')
-emailscript=$(curl -sS https://pastebin.com/raw/rX2sqmEa | awk '{print $2}')
-tokenscript=$(curl -sS https://pastebin.com/raw/rX2sqmEa | awk '{print $3}')
-userkey=$(curl -sS https://pastebin.com/raw/rX2sqmEa | awk '{print $1}')
-emailkey=$(curl -sS https://pastebin.com/raw/rX2sqmEa | awk '{print $2}')
-tokenkey=$(curl -sS https://pastebin.com/raw/rX2sqmEa | awk '{print $3}')
+userscript=$(curl -sS https://pastebin.com/raw/ZbBqds2Y | awk '{print $1}')
+emailscript=$(curl -sS https://pastebin.com/raw/ZbBqds2Y | awk '{print $2}')
+tokenscript=$(curl -sS https://pastebin.com/raw/ZbBqds2Y | awk '{print $3}')
+userkey=$(curl -sS https://pastebin.com/raw/ZbBqds2Y | awk '{print $1}')
+emailkey=$(curl -sS https://pastebin.com/raw/ZbBqds2Y | awk '{print $2}')
+tokenkey=$(curl -sS https://pastebin.com/raw/ZbBqds2Y | awk '{print $3}')
 function tambahip2(){
 author=$(cat /etc/profil)
 superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
@@ -65,8 +65,8 @@ function gantiip2(){
 author=$(cat /etc/profil)
 superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 if [ "$superadmin" = "VIP" ]; then
-mkdir /root/casper
-cd /root/casper/ &> /dev/null
+mkdir /root/rmbl
+cd /root/rmbl/ &> /dev/null
 wget https://raw.githubusercontent.com/angga2103/permission/main/ipmini &> /dev/null
 data=( `cat /root/rmbl/ipmini | grep '###' | cut -d ' ' -f 4 | sort | uniq`);
 now=`date +"%Y-%m-%d"`
@@ -118,7 +118,7 @@ echo -e "$COLOR1 ${NC} ${COLBG1}               ${WH}• REGISTER IPVPS •      
 echo -e "$COLOR1└─────────────────────────────────────────────────┘${NC}"
 echo -e "$COLOR1┌─────────────────────────────────────────────────┐${NC}"
 cd
-rm -rf /root/casper >/dev/null
+rm -rf /root/rmbl >/dev/null
 until [[ $daftar =~ ^[0-9.]+$ ]]; do
 read -p "   MASUKKAN IPNYA: " daftar
 echo -e "$COLOR1 ${NC}"
@@ -209,7 +209,7 @@ U6=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini
 exp=$(date -d "$hari days" +"%Y-%m-%d")
 hariini=$(date -d "0 days" +"%Y-%m-%d")
 git config --global user.email "${emailscript}" &> /dev/null
-git config --global user.name "casper9" &> /dev/null
+git config --global user.name "angga2103" &> /dev/null
 mkdir /root/rmbl
 cd /root/rmbl
 wget https://raw.githubusercontent.com/angga2103/permission/main/ipmini &> /dev/null
@@ -260,7 +260,7 @@ TEXT="
 <b>Succes Create this IP</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 2Menit Dulu Lalu Masuk Lagi</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ORDER","url":"https://t.me/rmblvpn1"},{"text":"🔥GRUP","url":"https://t.me/configopok"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔥ORDER","url":"https://t.me/masansor2"},{"text":"🔥GRUP","url":"https://t.me/masansor2"}]]}'
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 cd
 if [ ! -e /etc/tele ]; then
@@ -354,7 +354,7 @@ sed -i "s/### $U2 $U3 $U4 $U5 $U6/### $U2 $U3 $U4 $U5 $mkkey/g" ipmini
 git config --global --unset user.name &> /dev/null
 git config --global --unset user.email &> /dev/null
 git config --global user.email "${emailscript}" &> /dev/null
-git config --global user.name "casper9" &> /dev/null
+git config --global user.name "angga2103" &> /dev/null
 rm -rf .git
 git init &> /dev/null
 git add /root/rmbl/ipmini &> /dev/null
@@ -388,7 +388,7 @@ fi
 git config --global --unset user.name &> /dev/null
 git config --global --unset user.email &> /dev/null
 git config --global user.email "${emailkey}" >/dev/null 2>&1
-git config --global user.name "casperr99" >/dev/null 2>&1
+git config --global user.name "angga2103" >/dev/null 2>&1
 rm -rf .git
 git init &> /dev/null
 git add /root/rmbl/key
@@ -426,7 +426,7 @@ TEXT="
 <b>Succes Create This Key</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 2Menit Dulu Lalu Masuk Lagi</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.mr"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me//337"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me//masansor2"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me//masansor2"}]]}'
 else
 TEXT="
 <code>◇━━━━━━━━━━━━━━◇</code>
@@ -439,7 +439,7 @@ TEXT="
 <b>Succes Create This Key</b>
 <code>◇━━━━━━━━━━━━━━◇</code>
 <i>Tunggu 2Menit Dulu Lalu Masuk Lagi</i>
-"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me//187"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me//337"}]]}'
+"'&reply_markup={"inline_keyboard":[[{"text":"🔥ɪɴsᴛᴀʟʟ sᴄʀɪᴘᴛ","url":"https://t.me//masansor2"},{"text":"🔥 ʀᴇɴᴇᴡ sᴄʀɪᴘᴛ","url":"https://t.me//masansor2"}]]}'
 fi
 curl -s --max-time $TIMES -d "chat_id=$CHATID&disable_web_page_preview=1&text=$TEXT&parse_mode=html" $URL >/dev/null
 if [ ! -e /etc/tele ]; then
@@ -472,8 +472,8 @@ cd
 rm -rf /root/rmbl &> /dev/null
 git config --global user.email "${emailscript}" &> /dev/null
 git config --global user.name "RMBL-VIP" &> /dev/null
-mkdir /root/casper
-cd /root/casper/ &> /dev/null
+mkdir /root/rmbl
+cd /root/rmbl/ &> /dev/null
 wget https://raw.githubusercontent.com/angga2103/permission/main/ipmini &> /dev/null
 clear
 NUMBER_OF_CLIENTS=$(grep -c -E "ON " "ipmini")
@@ -708,8 +708,8 @@ m-ip
 function renewipvps(){
 clear
 MYIP=$(curl -sS ipv4.icanhazip.com)
-listuser=$(curl -sS https://raw.githubusercontent.com/casper9/permission/main/ipmini | grep $MYIP | awk '{print $2}')
-superadmin=$(curl -sS https://raw.githubusercontent.com/casper9/permission/main/ipmini | grep $MYIP | awk '{print $7}')
+listuser=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $2}')
+superadmin=$(curl -sS https://raw.githubusercontent.com/angga2103/permission/main/ipmini | grep $MYIP | awk '{print $7}')
 uu=$(curl -sS https://pastebin.com/raw/BZ9Fcnqf)
 author=$(cat /etc/profil)
 TIMES="10"
@@ -967,7 +967,7 @@ CHATID=$(cat /etc/per/id)
 KEY=$(cat /etc/per/token)
 URL="https://api.telegram.org/bot$KEY/sendMessage"
 cd
-rm -rf /root/casper >/dev/null
+rm -rf /root/rmbl >/dev/null
 git config --global user.email "${emailscript}" &> /dev/null
 git config --global user.name "RMBL-VIP" &> /dev/null
 mkdir /root/rmbl
@@ -1034,8 +1034,8 @@ git init &> /dev/null
 git add ipmini
 git commit -m renew &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://github.com/casper9/permission.git &> /dev/null
-git push -f https://${tokenscript}@github.com/casper9/permission.git &> /dev/null
+git remote add origin https://github.com/angga2103/permission.git &> /dev/null
+git push -f https://${tokenscript}@github.com/angga2103/permission.git &> /dev/null
 clear
 echo -e "$COLOR1┌────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}     ${WH}• CHANGE IPVPS •      ${NC} $COLOR1 $NC"
@@ -1143,8 +1143,8 @@ git init &> /dev/null
 git add ipmini
 git commit -m remove &> /dev/null
 git branch -M main &> /dev/null
-git remote add origin https://github.com/casper9/permission.git &> /dev/null
-git push -f https://${tokenscript}@github.com/casper9/permission.git &> /dev/null
+git remote add origin https://github.com/angga2103/permission.git &> /dev/null
+git push -f https://${tokenscript}@github.com/angga2103/permission.git &> /dev/null
 clear
 echo -e "$COLOR1┌──────────────────────────────────────┐${NC}"
 echo -e "$COLOR1 ${NC} ${COLBG1}         ${WH}• DELETE IPVPS •        ${NC} $COLOR1 $NC"
