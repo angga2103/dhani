@@ -127,7 +127,7 @@ git remote add origin https://github.com/${userscript}/permission >/dev/null 2>&
 git push -f https://${tokenscript}@github.com/${userscript}/permission >/dev/null 2>&1
 sleep 0.5
 rm ipmini
-wget https://raw.githubusercontent.com/angga2103/dhani/license/main/key >/dev/null 2>&1
+wget https://raw.githubusercontent.com/angga2103/license/main/key >/dev/null 2>&1
 if [ "$ADMIN" = "ON" ]; then
 sed -i "/^### $LIST $Key $KEY2 $ADMIN $TOTALIP/d" /root/rmbl/key
 else
@@ -298,7 +298,7 @@ else
 mkdir /etc/github
 echo "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" > /etc/github/api
 echo "anggadian2103@gmail.com" > /etc/github/email
-echo "angga2103/dhani" > /etc/github/username
+echo "angga2103" > /etc/github/username
 m-ip
 fi
 }
