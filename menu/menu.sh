@@ -73,12 +73,12 @@ MYIP=$(curl -sS ipv4.icanhazip.com)
 #web3=$(curl -sS http://rmb.vip.app/ress | grep $kode | awk '{print $4}')
 #web4=$(curl -sS http://rmb.vip.app/ress | grep $kode | awk '{print $5}')
 #web5=$(curl -sS http://rmb.vip.app/ress | grep $kode | awk '{print $6}')
-userscript=$(curl -sS https://pastebin.com/raw/BeT2ymjs | awk '{print $1}')
-emailscript=$(curl -sS https://pastebin.com/raw/BeT2ymjs | awk '{print $2}')
-tokenscript=$(curl -sS https://pastebin.com/raw/BeT2ymjs | awk '{print $3}')
-userkey=$(curl -sS https://pastebin.com/raw/BeT2ymjs | awk '{print $1}')
-emailkey=$(curl -sS https://pastebin.com/raw/BeT2ymjs | awk '{print $2}')
-tokenkey=$(curl -sS https://pastebin.com/raw/BeT2ymjs | awk '{print $3}')
+userscript=$(curl -sS https://pastebin.com/raw/SPmDAEWx | awk '{print $1}')
+emailscript=$(curl -sS https://pastebin.com/raw/SPmDAEWx | awk '{print $2}')
+tokenscript=$(curl -sS https://pastebin.com/raw/SPmDAEWx | awk '{print $3}')
+userkey=$(curl -sS https://pastebin.com/raw/SPmDAEWx | awk '{print $1}')
+emailkey=$(curl -sS https://pastebin.com/raw/SPmDAEWx | awk '{print $2}')
+tokenkey=$(curl -sS https://pastebin.com/raw/SPmDAEWx | awk '{print $3}')
 if [[ $kode == $web ]]; then
 MYIP=$(curl -sS ipv4.icanhazip.com)
 hhari=$(date -d "$web3 days" +"%Y-%m-%d")
@@ -296,7 +296,7 @@ if [[ -e /etc/github/api ]]; then
 m-ip
 else
 mkdir /etc/github
-echo "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" > /etc/github/api
+echo "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" > /etc/github/api
 echo "anggadian2103@gmail.com" > /etc/github/email
 echo "angga2103" > /etc/github/username
 m-ip
