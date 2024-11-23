@@ -296,7 +296,7 @@ if [[ -e /etc/github/api ]]; then
 m-ip
 else
 mkdir /etc/github
-echo "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" > /etc/github/api
+echo "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" > /etc/github/api
 echo "anggadian2103@gmail.com" > /etc/github/email
 echo "angga2103" > /etc/github/username
 m-ip
