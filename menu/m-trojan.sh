@@ -284,7 +284,7 @@ user=Trial-`</dev/urandom tr -dc X-Z-0-9 | head -c4`
 uuid=$(cat /proc/sys/kernel/random/uuid)
 masaaktif=1
 iplim=1
-Quota=10
+Quota=1
 if [ ! -e /etc/trojan ]; then
 mkdir -p /etc/trojan
 fi
