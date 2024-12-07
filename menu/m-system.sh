@@ -84,16 +84,16 @@ clear
 #res2() {
 #wget --no-check-certificate http://rmblvpn.my.id/slowdns/rmbl2.sh && chmod +x rmbl2.sh && ./rmbl2.sh
 #clear
-}
+#}
 #res3() {
 #wget --no-check-certificate http://rmblvpn.my.id/slowdns/rmbl3.sh && chmod +x rmbl3.sh && ./rmbl3.sh
 #clear
-}
+#}
 #res5() {
 #wget --no-check-certificate http://rmblvpn.my.id/slowdns/rmbl4.sh && chmod +x rmbl4.sh && ./rmbl4.sh
 #clear
 #}
-clear
+#clear
 echo -e "$COLOR1┌──────────────────────────────────────────┐${NC}"
 echo -e "$COLOR1│ ${WH}Please select a your Choice to Set Domain              ${NC}"
 echo -e "$COLOR1└──────────────────────────────────────────┘${NC}"
@@ -142,7 +142,7 @@ done
 if [[ $domain2 == "1" ]]; then
 clear
 echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
-echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.kingvpn.my.id       $COLOR1│${NC}"
+echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.xnxxms.cloud       $COLOR1│${NC}"
 echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
 echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
 echo " "
@@ -157,95 +157,95 @@ fun_bar 'res1'
 clear
 rm -rf /root/subdomainx
 fi
-#if [[ $domain2 == "2" ]]; then
-#clear
-#echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
-#echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.berurat.cloud      $COLOR1│${NC}"
-#echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
-#echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
-#echo " "
-#until [[ $dn2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-#read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn2
-#done
-#echo "$dn2" > /etc/xray/domain
-#echo "$dn2" > /root/subdomainx
-#cd
-#sleep 1
-#fun_bar 'res2'
-#clear
-#rm -rf /root/subdomainx
-#fi
-#if [[ $domain2 == "3" ]]; then
-#clear
-#echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
-#echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.adijaya.cloud  $COLOR1│${NC}"
-#echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
-#echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
-#echo " "
-#until [[ $dn3 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-#read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn3
-#done
-#echo "$dn3" > /etc/xray/domain
-#echo "$dn3" > /root/subdomainx
-#cd
-#sleep 1
-#fun_bar 'res5'
-#clear
-#rm -rf /root/subdomainx
-#fi
-#if [[ $domain2 == "4" ]]; then
-#clear
-#echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
-#echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.pirang.cloud       $COLOR1│${NC}"
-#echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
-#echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
-#echo " "
-#until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-#read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn4
-#done
-#echo "$dn4" > /etc/xray/domain
-#echo "$dn4" > /root/subdomainx
-#cd
-#sleep 1
-#fun_bar 'res4'
-#clear
-#rm -rf /root/subdomainx
-#fi
-#if [[ $domain2 == "5" ]]; then
-#clear
-#echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
-#echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.berurat.cloud      $COLOR1│${NC}"
-#echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
-#echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
-#echo " "
-#until [[ $dn5 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-#read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn5
-#done
-#echo "$dn5" > /etc/xray/domain
-#echo "$dn5" > /root/subdomainx
-#cd
-#sleep 1
-#fun_bar 'res3'
-#clear
-#rm -rf /root/subdomainx
-#fi
-#if [[ $domain2 == "6" ]]; then
-#clear
-#echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
-#echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.slowvip.tech        $COLOR1│${NC}"
-#echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
-#echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
-#echo " "
-#until [[ $dn6 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
-#read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn6
-#done
-#echo "$dn6" > /etc/xray/domain
-#echo "$dn6" > /root/subdomainx
-#cd
-#sleep 1
-#fun_bar 'res6'
-#clear
-#rm -rf /root/subdomainx
+if [[ $domain2 == "2" ]]; then
+clear
+echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
+echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.berurat.cloud      $COLOR1│${NC}"
+echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
+echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
+echo " "
+until [[ $dn2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn2
+done
+echo "$dn2" > /etc/xray/domain
+echo "$dn2" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res2'
+clear
+rm -rf /root/subdomainx
+fi
+if [[ $domain2 == "3" ]]; then
+clear
+echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
+echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.adijaya.cloud  $COLOR1│${NC}"
+echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
+echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
+echo " "
+until [[ $dn3 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn3
+done
+echo "$dn3" > /etc/xray/domain
+echo "$dn3" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res5'
+clear
+rm -rf /root/subdomainx
+fi
+if [[ $domain2 == "4" ]]; then
+clear
+echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
+echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.pirang.cloud       $COLOR1│${NC}"
+echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
+echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
+echo " "
+until [[ $dn4 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn4
+done
+echo "$dn4" > /etc/xray/domain
+echo "$dn4" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res4'
+clear
+rm -rf /root/subdomainx
+fi
+if [[ $domain2 == "5" ]]; then
+clear
+echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
+echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.berurat.cloud      $COLOR1│${NC}"
+echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
+echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
+echo " "
+until [[ $dn5 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn5
+done
+echo "$dn5" > /etc/xray/domain
+echo "$dn5" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res3'
+clear
+rm -rf /root/subdomainx
+fi
+if [[ $domain2 == "6" ]]; then
+clear
+echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
+echo -e  "$COLOR1│  \033[1;37mContoh subdomain xxx.slowvip.tech        $COLOR1│${NC}"
+echo -e  "$COLOR1│    \033[1;37mxxx jadi subdomain kamu               $COLOR1│${NC}"
+echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
+echo " "
+until [[ $dn6 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
+read -rp "Masukan subdomain kamu Disini tanpa spasi : " -e dn6
+done
+echo "$dn6" > /etc/xray/domain
+echo "$dn6" > /root/subdomainx
+cd
+sleep 1
+fun_bar 'res6'
+clear
+rm -rf /root/subdomainx
 fi
 read -n 1 -s -r -p "  Press any key to Renew Cert or Ctrl + C to Exit"
 certv2ray
@@ -263,7 +263,7 @@ clear
 echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
 echo -e  "$COLOR1│             ${WH}TERIMA KASIH                 $COLOR1│${NC}"
 echo -e  "$COLOR1│        ${WH}SUDAH MENGGUNAKAN SCRIPT          $COLOR1│${NC}"
-echo -e  "$COLOR1│               ${WH} Autoscript VIP                   $COLOR1│${NC}"
+echo -e  "$COLOR1│               ${WH} Premium VIP                   $COLOR1│${NC}"
 echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
 echo " "
 until [[ $dns1 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -277,7 +277,7 @@ clear
 echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
 echo -e  "$COLOR1│             ${WH}TERIMA KASIH                 $COLOR1│${NC}"
 echo -e  "$COLOR1│        ${WH}SUDAH MENGGUNAKAN SCRIPT          $COLOR1│${NC}"
-echo -e  "$COLOR1│               ${WH}Autoscript VIP                   $COLOR1│${NC}"
+echo -e  "$COLOR1│               ${WH} Premium VIP                   $COLOR1│${NC}"
 echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
 echo " "
 until [[ $dns2 =~ ^[a-zA-Z0-9_.-]+$ ]]; do
@@ -292,7 +292,7 @@ clear
 echo -e  "$COLOR1┌──────────────────────────────────────────┐${NC}"
 echo -e  "$COLOR1│             ${WH}TERIMA KASIH                 $COLOR1│${NC}"
 echo -e  "$COLOR1│        ${WH}SUDAH MENGGUNAKAN SCRIPT          $COLOR1│${NC}"
-echo -e  "$COLOR1│               ${WH}Autoscript VIP                   $COLOR1│${NC}"
+echo -e  "$COLOR1│               ${WH} Premium VIP                   $COLOR1│${NC}"
 echo -e  "$COLOR1└──────────────────────────────────────────┘${NC}"
 echo " "
 until [[ $dnscl =~ ^[a-zA-Z0-9_.-]+$ ]]; do
